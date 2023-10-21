@@ -16,7 +16,6 @@ const checkCashRegister = (price, cash, cid) => {
     cid.map(elem => drawerMoney+=elem[1]);
 
     drawerMoney = drawerMoney.toFixed(2);
-
     if (changeMoney > drawerMoney) 
       return { status: "INSUFFICIENT_FUNDS", change: []};
     else if (changeMoney.toFixed(2) === drawerMoney) 

@@ -1,3 +1,4 @@
+// Pode-se fazer utilizando x mod13
 function rot13(str) {
     let ans = ""
     for(let i = 0; i < str.length; i++) {
@@ -9,7 +10,6 @@ function rot13(str) {
         else 
           ans += str[i]
     }
-    console.log(ans)
     return ans;
 }
 
